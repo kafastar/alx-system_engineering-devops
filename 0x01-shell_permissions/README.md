@@ -1,0 +1,6 @@
+# Shell Permissions Scripts
+
+This repository contains shell scripts for performing various permissions-related tasks. Each script focuses on a specific task and provides the necessary instructions for executing it. The scripts are part of the `0x01-shell_permissions` directory.
+
+## Scripts
+- `0-iam_betty`: Switches the current user to `betty`
