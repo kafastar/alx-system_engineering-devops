@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Change the owner and group owner of the symbolic link
+sudo chown vincent:staff "$PWD/_hello"
