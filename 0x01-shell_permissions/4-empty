@@ -1,1 +1,4 @@
 #!/bin/bash
+
+# Create an empty file called "hello"
+echo -n "" > hello
