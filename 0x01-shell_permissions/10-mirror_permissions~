@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Check if the file "olleh" exists
+if [ -e "olleh" ]; then
+  # Get the mode of the file "olleh"
+  mode=$(stat -c "%a" olleh)
+
+  # Set the mode of the file "hello" to the same mode
+  chmod "$mode" hello
+else
+  echo "The file 'olleh' does not exist."
+fi

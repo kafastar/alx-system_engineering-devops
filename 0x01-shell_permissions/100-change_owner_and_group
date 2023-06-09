@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Change the owner and group owner recursively for all files and directories
+sudo chown -R vincent:staff .
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+file="hello"
+current_owner=$(stat -c "%U" "$file")
+target_owner="betty"
+allowed_owner="guillaume"
+
+# Check if the current owner is the allowed owner
+if [ "$current_owner" = "$allowed_owner" ]; then
+    # Change the owner of the file
+    sudo chown "$target_owner" "$file"
+fi
