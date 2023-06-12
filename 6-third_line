@@ -1,0 +1,3 @@
+#!/bin/bash
+
+file="iacta"; awk 'NR == 3' "$file"
