@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(( (10#${WATER//water/} + 10#${STIR//stir/}) )) | tr '0123456789' 'bestchol'
+printf "%s" "$(echo "$WATER$STIR" | tr 'waterstir' '0123456789' | tr '0123456789' 'bestchol')"
