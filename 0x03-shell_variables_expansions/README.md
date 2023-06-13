@@ -4,12 +4,13 @@ This repository contains shell scripts for the "Shell Variables and Expansions" 
 
 ## Scripts
 
-### 1-hello_you
+### 0-alias
 
-This script prints "hello user" where "user" is the current Linux user. It uses the `echo` command and the `$USER` variable to display the greeting.
+This script creates an alias named `ls` with the value `rm *`. After sourcing the script, running `ls` will remove all files in the current directory.
 
-To run the script, make it executable first using the following command:
+To use the script, execute the following command:
 
 ```bash
-chmod +x 1-hello_you
+source ./0-alias
+
 
