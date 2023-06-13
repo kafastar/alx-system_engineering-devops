@@ -1,4 +1,10 @@
 #!/bin/bash
 
-# Execute the groups command to get the user's groups
-groups $(whoami)
+# Get the current username
+username=$(id -un)
+
+# Get the groups the user is part of
+groups=$(id -Gn $username)
+
+# Print the groups
+echo $groups
